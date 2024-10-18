@@ -3,7 +3,7 @@ import './Home.css';
 
 const Home: React.FC = () => {
   return (
-    <div className='Header'>
+    <div className='header'>
       <h1>Cherry Dolls</h1>
       <div className='rectangle-header'></div>
       <p>Équipe Vendéenne de Pom Pom Girls</p>
