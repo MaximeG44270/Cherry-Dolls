@@ -1,16 +1,39 @@
+@import url('/src/Fonts/font-style.css');
+
+.topStrip {
+  background-color: #fff;
+  height: 1vh;
+  width: 100%;
+  position: absolute;
+  top: 1vh;
+  left: 0;
+  z-index: 9;
+}
+
+.bottomStrip {
+  background-color: #fff; 
+  height: 1vh;
+  width: 100%;
+  position: absolute;
+  bottom: 1vh;
+  left: 0;
+  z-index: 9;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: rgba(51, 51, 51, 0.8);
   color: #fff;
+  background-color: #e30f0b;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
 }
+
 
 .logo img {
   height: 50px;
@@ -19,10 +42,14 @@
 .navLinks {
   display: flex;
   list-style: none;
+  margin-right: 1vw;
 }
 
 .navLinks li {
   margin-left: 2rem;
+  font-family: 'poppins-Bold';
+  font-size: 1.5rem;
+  margin-right: 8vw;
 }
 
 .navLinks a {
@@ -32,7 +59,8 @@
 }
 
 .navLinks a:hover {
-  color: #ddd;
+  color: black;
+  transition: all 0.3s ease;
 }
 
 /* Burger menu styles */
@@ -62,6 +90,8 @@
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+
+
 /* Responsive styling */
 @media (max-width: 768px) {
 
@@ -71,13 +101,13 @@
       position: absolute;
       top: 37px;
       right: 0;
-      height: calc(100vh - 60px);
-      background-color: #333;
+      height: calc(50vh - 60px);
+      background-color: rgba(0, 0, 0, 0.8);
       flex-direction: column;
       align-items: center;
       width: 100%;
       transform: translateX(100%);
-      transition: transform 0.3s ease;
+      transition: transform 0.8s ease;
       display: none;
   }
 
@@ -92,5 +122,15 @@
 
   .burger {
     display: flex;
+  }
+
+  .topStrip {
+    height: 0.5vh;
+    top: 0.5vh;
+  }
+  
+  .bottomStrip {
+    height: 0.5vh;
+    bottom: 0.5vh;
   }
 }  
