@@ -42,7 +42,6 @@
 .navLinks {
   display: flex;
   list-style: none;
-  margin-right: 1vw;
 }
 
 .navLinks li {
@@ -118,7 +117,14 @@
 
   .navLinks li {
     margin: 1.5rem 0;
+    font-size: 2.5rem;
   }
+
+  .navLinks a {
+    color: #e30f0b;
+    -webkit-text-stroke: 1px white;
+  }
+  
 
   .burger {
     display: flex;
