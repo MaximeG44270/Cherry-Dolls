@@ -1,8 +1,28 @@
-.bloc-container-1 {
+.container-movie {
+    width: 100%;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
+    position: relative; 
+}
+
+.video-background {
+    position: absolute;
+    width: 100%;
     height: 100vh;
-    background-color: aqua;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    pointer-events: none;
 }

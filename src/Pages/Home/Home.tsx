@@ -3,6 +3,7 @@ import Header from './Header/header';
 import ContainerPresentation from './Container-presentation/container-presentation';
 import CarouselCherry from './Carousel/carousel-cherry';
 import Video from './Video/video';
+import Footer from './Footer/footer';
 
 const Home: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const Home: React.FC = () => {
       <ContainerPresentation />
       <CarouselCherry />
       <Video />
+      <Footer />
     </div>
   );
 };
