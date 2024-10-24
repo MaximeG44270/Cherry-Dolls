@@ -26,7 +26,7 @@ const CarouselCherry: React.FC = () => {
 
     return (
         <div className="wrapper">
-            <div className="container">
+            <div className="container-carrousel">
                 {people.map((person, index) => (
                     <React.Fragment key={index}>
                         <input 

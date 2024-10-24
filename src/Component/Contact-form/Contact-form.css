@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.block {
+    display: block;
+}
+
+.height {
+    height: 90vh;
+}
+
+.text-h2 {
+    text-align: center;
+    color: #e30f0b;
+    font-family: 'Famous-College';
+    font-size: 3rem;
+    margin-bottom: 10vh;
+    margin-top: 5vh;
+}
+
+.red-button {
+    background-color:#e30f0b;
+}

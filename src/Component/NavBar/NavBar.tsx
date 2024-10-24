@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './NavBar.module.css';
 
 const NavBar: React.FC = () => {
@@ -11,7 +12,7 @@ const NavBar: React.FC = () => {
     return (
         <>
             <nav className={styles.navbar}>
-            <div className={styles.topStrip}></div>
+                <div className={styles.topStrip}></div>
                 <div className={styles.logo}>
                     <img src="/path/to/your-logo.png" alt="Logo" />
                 </div>
@@ -21,9 +22,9 @@ const NavBar: React.FC = () => {
                     <div className={`${styles.line} ${menuOpen ? styles.line3 : ''}`}></div>
                 </div>
                 <ul className={`${styles.navLinks} ${menuOpen ? styles.active : ''}`}>
-                    <li><a href="#home" onClick={() => setMenuOpen(false)}>Home</a></li>
+                    <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
                     <li><a href="#gallery" onClick={() => setMenuOpen(false)}>Photo</a></li>
-                    <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+                    <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
                 </ul>
                 <div className={styles.bottomStrip}></div>
             </nav>
@@ -32,3 +33,4 @@ const NavBar: React.FC = () => {
 };
 
 export default NavBar;
+

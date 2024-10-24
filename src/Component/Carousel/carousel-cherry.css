@@ -29,7 +29,7 @@ body {
     justify-content: center;
 }
 
-.container {
+.container-carrousel {
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
