@@ -144,7 +144,7 @@ input:checked + label .description {
 
 /* Media Queries pour la réactivité */
 @media (max-width: 1024px) {
-    .container {
+    .container-carrousel {
         flex-direction: column;
         height: auto;
         width: 90vw;

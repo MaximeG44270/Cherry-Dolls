@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Poppins-Black-Italic';
+    src: url('/src/Fonts/Poppins-BlackItalic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins-Black';
+    src: url('/src/Fonts/Poppins-Black.ttf') format('truetype');
+}
+
+.texte-h1-home-gallery {
+    font-size: 4rem;
+    font-family: 'Poppins-Black-Italic';
+    color: #e30f0b;
+}
+
+.texte-h1-home-gallery-category {
+    font-size: 2rem;
+    font-family: 'Poppins-Black';
+    color: black;
+}
+
+@media (max-width: 1024px) {
+    .texte-h1-home-gallery {
+      font-size: 3rem;
+    }
+
+    .container-gallery{
+        margin-top: 0;
+    }
+}

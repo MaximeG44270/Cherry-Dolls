@@ -22,3 +22,10 @@
 .red-button {
     background-color:#e30f0b;
 }
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .z-index {
+        z-index: 0;
+    }
+}

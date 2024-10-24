@@ -98,7 +98,7 @@
   n'est pas activé, il soit cache */
   .navLinks {
       position: absolute;
-      top: 37px;
+      top: 82px;
       right: 0;
       height: calc(50vh - 60px);
       background-color: rgba(0, 0, 0, 0.8);
