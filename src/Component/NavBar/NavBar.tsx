@@ -12,10 +12,11 @@ const NavBar: React.FC = () => {
     return (
         <>
             <nav className={styles.navbar}>
-                <div className={styles.topStrip}></div>
-                <div className={styles.logo}>
-                    <img src="/path/to/your-logo.png" alt="Logo" />
-                </div>
+                    <div className={styles.barre1}>
+                        <div className={styles.logo}>
+                            <img src="/image/logo-cercle-cheery.png" alt="Logo" />
+                        </div>
+                    </div>
                 <div className={styles.burger} onClick={toggleMenu}>
                     <div className={`${styles.line} ${menuOpen ? styles.line1 : ''}`}></div>
                     <div className={`${styles.line} ${menuOpen ? styles.line2 : ''}`}></div>
@@ -26,11 +27,9 @@ const NavBar: React.FC = () => {
                     <li><a href="/photo" onClick={() => setMenuOpen(false)}>Photo</a></li>
                     <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
                 </ul>
-                <div className={styles.bottomStrip}></div>
             </nav>
         </>
     );
 };
 
 export default NavBar;
-

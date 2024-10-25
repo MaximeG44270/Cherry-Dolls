@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Famous-College';
+  src: url('/src/Fonts/Famous-College.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('/src/Fonts/Poppins-Regular.ttf') format('truetype');
+}
+
 .header {
   background-image: url('/public/image/image-de-fond.jpg');
   background-size: cover;
@@ -113,5 +123,10 @@ h1 {
 
   .image-scroll-down {
     width: 18vw;
+  }
+
+  h1 {
+    line-height: 1;
+    margin-top: 22vh;
   }
 }

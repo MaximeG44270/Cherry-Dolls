@@ -1,3 +1,17 @@
 .container-footer {
     height: 10vh;
 }
+
+.position-footer {
+    bottom: 0;
+    background-color: white;
+    width: 100vw;
+}
+
+@media (max-width: 767px) {
+    .position-footer {
+        background-color: white;
+        width: 100vw;
+        height: 18vh;
+    }
+}

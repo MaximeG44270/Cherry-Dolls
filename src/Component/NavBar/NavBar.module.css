@@ -1,32 +1,17 @@
 @import url('/src/Fonts/font-style.css');
 
-.topStrip {
-  background-color: #fff;
-  height: 1vh;
-  width: 100%;
-  position: absolute;
-  top: 1vh;
-  left: 0;
-  z-index: 9;
-}
-
-.bottomStrip {
-  background-color: #fff; 
-  height: 1vh;
-  width: 100%;
-  position: absolute;
-  bottom: 1vh;
-  left: 0;
-  z-index: 9;
-}
-
 .navbar {
+  background-image: url('/public/image/image-bar-nav.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  height: 11vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
   color: #fff;
-  background-color: #e30f0b;
   position: absolute;
   top: 0;
   left: 0;
@@ -34,9 +19,32 @@
   z-index: 10;
 }
 
+.containerNavBarGauche {
+  display: flex;
+  flex-direction: row;
+}
 
-.logo img {
-  height: 50px;
+.barre1 {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 21%;
+}
+
+.rectangle1 {
+  margin-left: -25%;
+  width: 3vw;
+  height: 100%;
+  background-color: white;
+  transform: skew(20deg);
+
 }
 
 .navLinks {
@@ -45,10 +53,10 @@
 }
 
 .navLinks li {
-  margin-left: 2rem;
+  margin-left: 1rem;
   font-family: 'poppins-Bold';
   font-size: 1.5rem;
-  margin-right: 8vw;
+  margin-right: 6vw;
 }
 
 .navLinks a {
@@ -92,7 +100,7 @@
 
 
 /* Responsive styling */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   /* Ici le display: none est appliqué sur le menu afin que lorsque le menu
   n'est pas activé, il soit cache */
@@ -128,6 +136,7 @@
 
   .burger {
     display: flex;
+    margin-right: 4vw;
   }
 
   .topStrip {
@@ -140,3 +149,57 @@
     bottom: 0.5vh;
   }
 }  
+
+@media (max-width: 390px) {
+  .navbar {
+    height: 6vh;
+  }
+  .logo {
+      width: 29%;
+      margin-top: 2vh;
+  }
+}
+
+@media (max-width: 430px) {
+  .navbar {
+    height: 6vh;
+  }
+
+  .logo {
+    width: 29%;
+    margin-top: 2vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 6vh;
+  }
+
+  .logo {
+    width: 29%;
+    margin-top: 2vh;
+  }
+}
+
+@media (max-width: 820px) {
+  .navbar {
+    height: 6vh;
+  }
+
+  .logo {
+    width: 29%;
+    margin-top: 2vh;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    height: 6vh;
+  }
+
+  .logo {
+    width: 29%;
+    margin-top: 2vh;
+  }
+}
