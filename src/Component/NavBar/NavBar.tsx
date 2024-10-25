@@ -24,7 +24,7 @@ const NavBar: React.FC = () => {
                 </div>
                 <ul className={`${styles.navLinks} ${menuOpen ? styles.active : ''}`}>
                     <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-                    <li><a href="/photo" onClick={() => setMenuOpen(false)}>Photo</a></li>
+                    <li><Link to="/photo" onClick={() => setMenuOpen(false)}>Photo</Link></li>
                     <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
                 </ul>
             </nav>
