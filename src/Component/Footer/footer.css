@@ -5,7 +5,6 @@
 .position-footer {
     bottom: 0;
     background-color: white;
-    width: 100vw;
 }
 
 @media (max-width: 767px) {

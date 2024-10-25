@@ -23,6 +23,10 @@
     background-color:#e30f0b;
 }
 
+.padding-top {
+    padding-top: 21vh;
+}
+
 /* Responsive styling */
 @media (max-width: 768px) {
     .z-index {
