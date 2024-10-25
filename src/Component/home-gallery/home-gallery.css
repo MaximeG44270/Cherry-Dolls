@@ -8,6 +8,10 @@
     src: url('/src/Fonts/Poppins-Black.ttf') format('truetype');
 }
 
+.container-gallery {
+    background-color: white;
+}
+
 .texte-h1-home-gallery {
     font-size: 4rem;
     font-family: 'Poppins-Black-Italic';
