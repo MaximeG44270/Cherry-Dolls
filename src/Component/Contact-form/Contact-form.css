@@ -32,4 +32,12 @@
     .z-index {
         z-index: 0;
     }
+
+    .padding-top {
+        padding-top: 10vh;
+    }
+
+    .height {
+        height: 100vh;
+    }
 }

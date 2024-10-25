@@ -106,9 +106,9 @@
   n'est pas activé, il soit cache */
   .navLinks {
       position: absolute;
-      top: 82px;
+      top: 40px;
       right: 0;
-      height: calc(50vh - 60px);
+      height: calc(58vh - 60px);
       background-color: rgba(0, 0, 0, 0.8);
       flex-direction: column;
       align-items: center;
