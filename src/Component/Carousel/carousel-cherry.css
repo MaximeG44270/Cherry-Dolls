@@ -143,12 +143,24 @@ input:checked + label .description {
 }
 
 /* Media Queries pour la réactivité */
+@media (max-width: 768px) {
+    .card > .row > .icon {
+        width: 60px;
+    }
+}
+
 @media (max-width: 1024px) {
     .container-carrousel {
         flex-direction: column;
         height: auto;
-        width: 90vw;
-        margin-top: 30vh;
+        width: 70vw;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 135vh;
+        display: flex;
+        justify-content: center;
     }
 
     .card {
@@ -159,7 +171,7 @@ input:checked + label .description {
 
     input:checked + label {
         height: auto;
-        width: 90vw;
+        width: 70vw;
         height: 50vh;
     }
 
@@ -185,7 +197,7 @@ input:checked + label .description {
     }
 
     .Assemblage-1 {
-        margin-top: 2vh;
+        margin-top: 6vh;
     }
 
     .Anniversaire {
@@ -196,8 +208,12 @@ input:checked + label .description {
     margin: 0px; 
     margin-top: 14vh;
     height: 6vh;
+    width: 70px;
     }
 }
+
+
+
 
 @media (max-width: 668px) and (orientation: landscape) {
     input:checked+label {
