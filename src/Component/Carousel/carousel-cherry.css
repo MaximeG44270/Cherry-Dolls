@@ -205,6 +205,10 @@ input:checked + label .description {
         height: 85vh;
     }
 
+    .card > .row > .description {
+        height: 43vh;
+    }
+
     .card>.row>.icon {
         margin: 5px;
         margin-top: 14vh;
@@ -226,14 +230,48 @@ input:checked + label .description {
 
 @media (max-width: 844px) and (orientation: landscape) {
     input:checked+label {
-        width: 69vw;
-        height: 85vh;
+        width: 59vw;
+        height: 80vh;
+    }
+
+    .card > .row > .description {
+        height: 43vh;
     }
 
     .card>.row>.icon {
         margin: 5px;
-        margin-top: 14vh;
+        margin-top: 28vh;
         height: 14vh;
+    }
+
+    .card {
+        height: 17vh;
+    }
+
+    .wrapper {
+        height: 300vh;
+    }
+
+    .container-carrousel {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 932px) and (orientation: landscape) {
+    input:checked+label {
+        width: 59vw;
+        height: 80vh;
+    }
+
+    .card > .row > .description {
+        height: 43vh;
+    }
+
+    .card>.row>.icon {
+        margin: 5px;
+        margin-top: 28vh;
+        height: 14vh;
+        width: 6vw;
     }
 
     .card {

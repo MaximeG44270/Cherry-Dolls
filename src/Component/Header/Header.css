@@ -158,3 +158,9 @@ h1 {
     width: 6vw;
   }
 }
+
+@media (max-width: 932px) and (orientation: landscape) {
+  .image-scroll-down {
+    width: 5vw;
+  }
+}

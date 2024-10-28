@@ -100,8 +100,8 @@
 
 
 /* Responsive styling */
-@media (max-width: 767px) and (orientation: portrait),
-       (max-width: 932px) and (orientation: landscape) {
+@media (max-width: 1024px) and (orientation: portrait),
+       (max-width: 933px) and (orientation: landscape) {
 
   /* Ici le display: none est appliqué sur le menu afin que lorsque le menu
   n'est pas activé, il soit cache */
@@ -149,32 +149,16 @@
     height: 0.5vh;
     bottom: 0.5vh;
   }
-}  
-
-@media (max-width: 390px) {
-  .navbar {
-    height: 6vh;
-  }
-  .logo {
-      width: 29%;
-      margin-top: 2vh;
-  }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 1024px) {
   .navbar {
     height: 6vh;
   }
 
-  .logo {
-    width: 29%;
-    margin-top: 2vh;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    height: 6vh;
+  .navLinks {
+    top: 74px;
+    height: calc(32vh - 60px)
   }
 
   .logo {
@@ -192,9 +176,14 @@
     width: 29%;
     margin-top: 2vh;
   }
+
+  .navLinks {
+    top: 74px;
+    height: calc(32vh - 60px)
+  }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .navbar {
     height: 6vh;
   }
@@ -203,24 +192,64 @@
     width: 29%;
     margin-top: 2vh;
   }
+
+  .navLinks {
+    top: 61px;
+    height: calc(38vh - 60px)
+  }
 }
 
-@media (max-width: 668px) and (orientation: landscape) {
-    .navbar{
-      height: 11vh;
-    }
+@media (max-width: 430px) {
+  .navbar {
+    height: 6vh;
+  }
 
-    .logo {
-      width: 17%;
-    }
+  .logo {
+    width: 29%;
+    margin-top: 2vh;
+  }
 
-    .navLinks li {
-      margin: 1rem 0;
-    }
+  .navLinks {
+    top: 56px;
+    height: calc(42vh - 60px);
+  }
+}
 
-    .navLinks {
-      height: calc(91vh - 60px);
-    }
+@media (max-width: 390px) {
+  .navbar {
+    height: 6vh;
+  }
+  .logo {
+      width: 29%;
+      margin-top: 2vh;
+  }
+
+  .navLinks {
+    top: 50px;
+    height: calc(48vh - 60px);
+  }
+}
+
+@media (max-width: 932px) and (orientation: landscape) {
+  .navbar {
+    height: 11vh;
+  }
+
+  .logo {
+    width: 14%;
+  }
+
+  .navLinks li {
+    margin: 1rem 0;
+  }
+
+  .navLinks {
+    height: calc(91vh - 60px);
+  }
+
+  .navLinks {
+    top: 46px;
+  }
 }
 
 @media (max-width: 844px) and (orientation: landscape) {
@@ -241,6 +270,28 @@
   }
 
   .navLinks {
-    top: 42px;
+    top: 43px;
+  }
+}
+
+@media (max-width: 667px) and (orientation: landscape) {
+  .navbar{
+    height: 11vh;
+  }
+
+  .logo {
+    width: 17%;
+  }
+
+  .navLinks li {
+    margin: 1rem 0;
+  }
+
+  .navLinks {
+    height: calc(91vh - 60px);
+  }
+
+  .navLinks {
+    top: 41px;
   }
 }
