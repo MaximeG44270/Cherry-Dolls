@@ -198,3 +198,53 @@ input:checked + label .description {
     height: 6vh;
     }
 }
+
+@media (max-width: 668px) and (orientation: landscape) {
+    input:checked+label {
+        width: 69vw;
+        height: 85vh;
+    }
+
+    .card>.row>.icon {
+        margin: 5px;
+        margin-top: 14vh;
+        height: 14vh;
+    }
+
+    .card {
+        height: 17vh;
+    }
+
+    .wrapper {
+        height: 300vh;
+    }
+
+    .container-carrousel {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 844px) and (orientation: landscape) {
+    input:checked+label {
+        width: 69vw;
+        height: 85vh;
+    }
+
+    .card>.row>.icon {
+        margin: 5px;
+        margin-top: 14vh;
+        height: 14vh;
+    }
+
+    .card {
+        height: 17vh;
+    }
+
+    .wrapper {
+        height: 300vh;
+    }
+
+    .container-carrousel {
+        margin-top: 0;
+    }
+}

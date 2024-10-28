@@ -100,7 +100,8 @@
 
 
 /* Responsive styling */
-@media (max-width: 767px) {
+@media (max-width: 767px) and (orientation: portrait),
+       (max-width: 932px) and (orientation: landscape) {
 
   /* Ici le display: none est appliqué sur le menu afin que lorsque le menu
   n'est pas activé, il soit cache */
@@ -201,5 +202,45 @@
   .logo {
     width: 29%;
     margin-top: 2vh;
+  }
+}
+
+@media (max-width: 668px) and (orientation: landscape) {
+    .navbar{
+      height: 11vh;
+    }
+
+    .logo {
+      width: 17%;
+    }
+
+    .navLinks li {
+      margin: 1rem 0;
+    }
+
+    .navLinks {
+      height: calc(91vh - 60px);
+    }
+}
+
+@media (max-width: 844px) and (orientation: landscape) {
+  .navbar {
+    height: 11vh;
+  }
+
+  .logo {
+    width: 17%;
+  }
+
+  .navLinks li {
+    margin: 1rem 0;
+  }
+
+  .navLinks {
+    height: calc(91vh - 60px);
+  }
+
+  .navLinks {
+    top: 42px;
   }
 }

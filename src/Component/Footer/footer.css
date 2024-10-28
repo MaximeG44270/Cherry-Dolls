@@ -14,3 +14,15 @@
         height: 26vh;
     }
 }
+
+@media (max-width: 668px) and (orientation: landscape) {
+    .position-footer {
+        height: 15vh;
+    }
+}
+
+@media (max-width: 844px) and (orientation: landscape) {
+    .position-footer {
+        height: 15vh;
+    }
+}
