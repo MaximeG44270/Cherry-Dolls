@@ -131,6 +131,26 @@ h1 {
   }
 }
 
+@media (max-width: 375px) {
+  h1 {
+    font-size: 7rem;
+  }
+
+  .image-scroll-down {
+    width: 25vw;
+  }
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 6rem;
+  }
+
+  .image-scroll-down {
+    width: 30vw;
+  }
+}
+
 @media (max-width: 668px) and (orientation: landscape) {
   h1 {
     font-size: 5rem;

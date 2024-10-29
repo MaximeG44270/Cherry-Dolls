@@ -32,6 +32,12 @@
     }
 }
 
+@media (max-width: 425px) {
+    .position-footer {
+        height: 20vh;
+    }
+}
+
 @media (max-width: 390px) {
     .position-footer {
         height: 21vh;
@@ -40,6 +46,12 @@
 
 @media (max-width: 375px) {
     .position-footer {
-        height: 27vh;
+        height: 22vh;
+    }
+}
+
+@media (max-width: 320px) {
+    .position-footer {
+        height: 20vh;
     }
 }

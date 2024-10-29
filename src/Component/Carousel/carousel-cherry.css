@@ -143,10 +143,29 @@ input:checked + label .description {
 }
 
 /* Media Queries pour la réactivité */
-@media (max-width: 768px) {
-    .card > .row > .icon {
-        width: 60px;
+@media (max-width: 1040px) {
+    .container-carrousel {
+        height: 50vh;
     }
+
+    input:checked + label {
+        width: 40vw;
+    }
+    
+    .card {
+        width: 5vw;
+    }
+
+    .card > .row > .description {
+        width: 34vw;
+        margin-left: 2vw;
+    }
+    
+    .card > .row > .icon {
+        margin: 0px;
+        margin-top: 14vh;
+        margin-left: 1px;
+    }    
 }
 
 @media (max-width: 1024px) {
@@ -196,10 +215,6 @@ input:checked + label .description {
         margin-bottom: 0vh;
     }
 
-    .Assemblage-1 {
-        margin-top: 6vh;
-    }
-
     .Anniversaire {
         margin-bottom: 6vh;
     }
@@ -212,13 +227,84 @@ input:checked + label .description {
     }
 }
 
+@media (max-width: 768px) {
+    .card > .row > .icon {
+        width: 47px;
+    }
+}
 
+@media (max-width: 430px) {
+    input:checked + label {
+        height: 36vh;
+    }
 
+    .card > .row > .description {
+        width: 43vw;
+        height: 27vh;
+    }
 
-@media (max-width: 668px) and (orientation: landscape) {
+    .Assemblage-1 {
+        margin-top: 8vh;
+    }
+
+    .Assemblage-2 {
+        margin-bottom: -6vh;
+    }
+
+    .card > .row {
+        height: 28vh;
+    }
+
+    .card > .row > .icon {
+        width: 43px;
+        margin-top: 22vh;
+    }
+}
+
+@media (max-width: 390px) {
+    .Assemblage-1 {
+        margin-top: 7vh;
+    }
+
+    .card > .row > .icon {
+        width: 50px;
+    }
+}
+
+@media (max-width: 320px) {
+    input:checked + label {
+        height: 36vh;
+    }
+
+    .card > .row > .description {
+        width: 43vw;
+        height: 27vh;
+    }
+
+    .Assemblage-1 {
+        margin-top: 1vh;
+    }
+
+    .Assemblage-2 {
+        margin-bottom: -6vh;
+    }
+
+    .card > .row {
+        height: 28vh;
+    }
+
+    .card > .row > .icon {
+        width: 43px;
+        margin-top: 22vh;
+    }
+}
+
+/* -------------------------  VERSION PAYSAGE  ------------------------------------- */
+
+@media (max-width: 932px) and (orientation: landscape) {
     input:checked+label {
-        width: 69vw;
-        height: 85vh;
+        width: 59vw;
+        height: 80vh;
     }
 
     .card > .row > .description {
@@ -227,8 +313,9 @@ input:checked + label .description {
 
     .card>.row>.icon {
         margin: 5px;
-        margin-top: 14vh;
+        margin-top: 28vh;
         height: 14vh;
+        width: 6vw;
     }
 
     .card {
@@ -273,10 +360,10 @@ input:checked + label .description {
     }
 }
 
-@media (max-width: 932px) and (orientation: landscape) {
+@media (max-width: 668px) and (orientation: landscape) {
     input:checked+label {
-        width: 59vw;
-        height: 80vh;
+        width: 69vw;
+        height: 85vh;
     }
 
     .card > .row > .description {
@@ -285,9 +372,8 @@ input:checked + label .description {
 
     .card>.row>.icon {
         margin: 5px;
-        margin-top: 28vh;
+        margin-top: 14vh;
         height: 14vh;
-        width: 6vw;
     }
 
     .card {
@@ -302,3 +388,5 @@ input:checked + label .description {
         margin-top: 0;
     }
 }
+
+
